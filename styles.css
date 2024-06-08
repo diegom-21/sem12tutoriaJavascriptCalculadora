@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+    margin: 0;
+    background-color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.title{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.display {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eaeaea;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f4f4f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button:active {
+    background-color: #ccc;
+}
+
+.operator {
+    background-color: #4350ff;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #3741cf;
+}
+
+.operator:active {
+    background-color: #2a32a8;
+}
+
+.reset {
+    background-color: #b4180c;
+    color: white;
+    grid-column: span 4;
+}
+
+.reset:hover {
+    background-color: #861109;
+}
+
+.reset:active {
+    background-color: #660d07;
+}
